@@ -21,13 +21,12 @@ class SearchBarWidget extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 8),
         child: Card(
           color: Theme.of(context).colorScheme.secondary,
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
           elevation: 2.0,
           child: ClipRRect(
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(8),
             child: Container(
-              height: 56,
+              height: 48,
               width: double.infinity,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,

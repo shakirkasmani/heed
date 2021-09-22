@@ -27,7 +27,7 @@ class HeedThemeData {
         ),
         inputDecorationTheme: InputDecorationTheme(
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(8),
           ),
         ),
         iconTheme: IconThemeData(color: colorScheme.primary),

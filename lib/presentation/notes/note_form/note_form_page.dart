@@ -122,7 +122,10 @@ class NoteFormPageScaffold extends StatelessWidget {
         title: BlocBuilder<NoteFormBloc, NoteFormState>(
           buildWhen: (p, c) => p.isEditing != c.isEditing,
           builder: (context, state) {
-            return Text(state.isEditing ? 'Edit a note' : 'Create a note');
+            return Text(
+              state.isEditing ? 'Edit a note' : 'Create a note',
+              style: TextStyle(color: Theme.of(context).colorScheme.primary),
+            );
           },
         ),
         leading: Container(),

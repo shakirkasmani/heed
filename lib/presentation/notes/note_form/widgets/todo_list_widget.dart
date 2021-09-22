@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:implicitly_animated_reorderable_list/implicitly_animated_reorderable_list.dart';
 import 'package:kt_dart/kt.dart';
 import 'package:provider/provider.dart';
-import 'package:implicitly_animated_reorderable_list/implicitly_animated_reorderable_list.dart';
 
 import 'package:heed/application/notes/note_form/note_form_bloc.dart';
-import 'package:heed/presentation/notes/note_form/misc/todo_item_presentation_classes.dart';
 import 'package:heed/presentation/notes/note_form/misc/build_context_x.dart';
+import 'package:heed/presentation/notes/note_form/misc/todo_item_presentation_classes.dart';
 
 class TodoList extends StatelessWidget {
   const TodoList({Key key}) : super(key: key);
@@ -105,14 +105,14 @@ class TodoTile extends HookWidget {
         child: Material(
           elevation: elevation,
           animationDuration: const Duration(milliseconds: 50),
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(8),
           child: Container(
             decoration: BoxDecoration(
                 border: Border.all(color: Colors.grey),
-                borderRadius: BorderRadius.circular(16)),
-            // margin: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                borderRadius: BorderRadius.circular(8)),
             child: ListTile(
-              contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+              contentPadding:
+                  const EdgeInsets.symmetric(vertical: 4, horizontal: 16),
               trailing: const Handle(
                 child: Icon(
                   Icons.list_outlined,
