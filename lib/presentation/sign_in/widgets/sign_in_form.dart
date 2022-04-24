@@ -42,7 +42,9 @@ class SignInForm extends StatelessWidget {
           child: Stack(
             children: [
               Form(
-                autovalidate: state.showErrorMessages,
+                autovalidateMode: state.showErrorMessages
+                    ? AutovalidateMode.always
+                    : AutovalidateMode.disabled,
                 child: SingleChildScrollView(
                   child: Container(
                     height: height * 0.92,

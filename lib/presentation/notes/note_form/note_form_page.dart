@@ -139,7 +139,9 @@ class NoteFormPageScaffold extends StatelessWidget {
           return ChangeNotifierProvider(
             create: (_) => FormTodos(),
             child: Form(
-              autovalidate: state.showErrorMessages,
+              autovalidateMode: state.showErrorMessages
+                  ? AutovalidateMode.always
+                  : AutovalidateMode.disabled,
               child: SingleChildScrollView(
                 child: Padding(
                   padding: const EdgeInsets.only(bottom: 80.0),
